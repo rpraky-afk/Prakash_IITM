@@ -188,7 +188,7 @@ def main(data_dir: Path):
     df = drop_duplicates(df)
     df = handle_missing(df)
     df = encode_categoricals(df)
-    df = scale_numeric(df)
+  #  df = scale_numeric(df)
     print(f"Final shape: {df.shape}")
     out_dir = data_dir / "cleaned"
     save_outputs(df, out_dir)
